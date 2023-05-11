@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="337dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="#30C8C3C3"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#A5958D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createacc" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="337dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:background="#30C8C3C3"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:textColorHint="#A5958D"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_username" />
+
+    <EditText
+        android:id="@+id/register_mobile"
+        android:layout_width="337dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:background="#30C8C3C3"
+        android:drawableLeft="@drawable/baseline_local_phone_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Enter Mobile. ex: 05xxxxxxxx"
+        android:textColorHint="#A5958D"
+        android:inputType="phone"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+    <Button
+        android:id="@+id/signupBTN"
+        android:layout_width="213dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#FD8053"
+        android:text="sign up"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_mobile"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <TextView
+        android:id="@+id/createacc"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="208dp"
+        android:text="Create Account"
+        android:textAlignment="center"
+        android:textColor="#FE8056"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="412dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="465dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/project_logo_" />
+</androidx.constraintlayout.widget.ConstraintLayout>
