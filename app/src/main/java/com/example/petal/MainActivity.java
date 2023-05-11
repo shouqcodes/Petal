@@ -2,7 +2,6 @@ package com.example.petal;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button signin, signup;
     DBHelper db;
     @SuppressLint("MissingInflatedId")
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,11 +54,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         signup.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
                 startActivity(intent);
             }
+
+
         });
     }
 }
